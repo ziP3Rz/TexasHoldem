@@ -1,6 +1,6 @@
 package models;
 
-public class Card {
+public class Card{
     private int num;
     private char suit;
 
@@ -26,5 +26,15 @@ public class Card {
 
     public void setSuit(char suit) {
         this.suit = suit;
+    }
+
+    @Override
+    public String toString(){
+        return "Number: " + num + " | Suit: " + suit;
+    }
+
+    //TODO: implementar compareTo
+    public int compareTo(Object o){
+        return 0;
     }
 }
