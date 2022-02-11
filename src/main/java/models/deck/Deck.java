@@ -11,15 +11,15 @@ public class Deck {
     }
 
     private void createDeck() {
-        for (int i = 0; i < deck.length; i++) {
+        for (int i = 0 ; i < deck.length; i++) {
             if ( i < 13 ) {
                 deck[i] = new Card(Numbers.getNumbers(i), Suits.getSuits(0));
             } else if ( i < 26 ) {
-                deck[i] = new Card(Numbers.getNumbers(i), Suits.getSuits(1));
+                deck[i] = new Card(Numbers.getNumbers(i-13), Suits.getSuits(1));
             } else if ( i < 39 ) {
-                deck[i] = new Card(Numbers.getNumbers(i), Suits.getSuits(2));
+                deck[i] = new Card(Numbers.getNumbers(i-26), Suits.getSuits(2));
             } else {
-                deck[i] = new Card(Numbers.getNumbers(i), Suits.getSuits(3));
+                deck[i] = new Card(Numbers.getNumbers(i-39), Suits.getSuits(3));
 
             }
         }
