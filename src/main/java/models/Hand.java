@@ -10,11 +10,14 @@ public class Hand {
     private Card[] orderedHand;
 
     public void orderHand(){
-        Card exchanger = fullHand[0];
+        Card exchanger;
         for(int i = 1; i < fullHand.length; i++){
-            if(exchanger.getNum() > fullHand[i].getNum()){
-                fullHand[i-1] = fullHand[i];
-                //fullHand[i];
+            for(int j = 0; j < fullHand.length - 1; j++){
+                if(fullHand[j].getNum() > fullHand[i+1].getNum()){
+                    exchanger = fullHand[j];
+                    fullHand[j] = fullHand[j+1];
+                    fullHand[j+1] = exchanger;
+                }
             }
         }
     }
