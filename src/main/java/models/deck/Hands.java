@@ -20,4 +20,12 @@ public enum Hands {
         this.value = value;
         this.cardsNumber = cardsNumber;
     }
+
+    public int getValue() {
+        return value;
+    }
+
+    public int getCardsNumber() {
+        return cardsNumber;
+    }
 }
