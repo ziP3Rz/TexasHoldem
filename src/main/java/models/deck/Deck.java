@@ -1,22 +1,26 @@
 package models.deck;
 //TODO: implementar esta clase.
 public class Deck {
-    private Card[] deck = new Card[52];
-    /*
-    public void createDeck(){
+    private final Card[] deck = new Card[52];
+
+    public Deck(){
+        createDeck();
+    }
+
+    private void createDeck(){
         for (int i = 0; i < deck.length; i++){
             if(i < 13){
-                deck[i] = new Card((i+1)%13,'P');
+                deck[i] = new Card((i+1)%13,"Spades");
             }else if(i < 26){
-                deck[i] = new Card((i+1)%13,'C');
+                deck[i] = new Card((i+1)%13,"Hearts");
             }else if(i < 39){
-                deck[i] = new Card((i+1)%13, 'T');
+                deck[i] = new Card((i+1)%13, "Clubs");
             }else{
-                deck[i] = new Card((i+1)%13, 'D');
+                deck[i] = new Card((i+1)%13, "Diamonds");
             }
         }
     }
-    */
+
     public void showDeck(){
         for (Card card:deck) {
             System.out.println(card.toString());
