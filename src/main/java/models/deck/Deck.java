@@ -1,4 +1,4 @@
-package models;
+package models.deck;
 //TODO: implementar esta clase.
 public class Deck {
     private Card[] deck = new Card[52];

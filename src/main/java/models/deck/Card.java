@@ -1,4 +1,4 @@
-package models;
+package models.deck;
 
 public class Card{
     private int num;

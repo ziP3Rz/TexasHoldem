@@ -1,5 +1,7 @@
 package models;
 
+import models.deck.Card;
+
 public class Player {
     private int bank;
     private int gamePosition;
