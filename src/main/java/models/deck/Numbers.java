@@ -25,4 +25,12 @@ public enum Numbers {
         this.value = value;
         this.sign = sign;
     }
+
+    public int getValue() {
+        return value;
+    }
+
+    public String getSign() {
+        return sign;
+    }
 }
