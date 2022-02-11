@@ -13,7 +13,7 @@ public class Hand {
         Card exchanger;
         for(int i = 1; i < fullHand.length; i++){
             for(int j = 0; j < fullHand.length - 1; j++){
-                if(fullHand[j].getNum() > fullHand[i+1].getNum()){
+                if(fullHand[j].getNum().getValue() > fullHand[i+1].getNum().getValue()){
                     exchanger = fullHand[j];
                     fullHand[j] = fullHand[j+1];
                     fullHand[j+1] = exchanger;
