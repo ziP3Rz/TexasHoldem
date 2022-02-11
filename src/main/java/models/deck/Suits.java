@@ -13,6 +13,10 @@ public enum Suits {
         this.sign = sign;
     }
 
+    public char getSign() {
+        return sign;
+    }
+
     public static Suits getSuits(int possition){
         return Suits.values()[possition];
     }

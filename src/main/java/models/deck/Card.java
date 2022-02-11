@@ -31,7 +31,7 @@ public class Card implements Comparable<Card>{
 
     @Override
     public String toString(){
-        return "Number: " + this.getNum().getValue() + " | Suit: " + this.getNum().getSign();
+        return "Number: " + this.getNum().getSign() + " | Suit: " + this.getSuit().getSign();
     }
 
     //TODO: implementar compareTo
