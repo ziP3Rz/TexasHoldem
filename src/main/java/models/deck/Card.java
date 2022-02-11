@@ -2,12 +2,12 @@ package models.deck;
 
 public class Card{
     private int num;
-    private char suit;
+    private String suit;
 
     public Card() {
     }
 
-    public Card(int num, char suit) {
+    public Card(int num, String suit) {
         this.num = num;
         this.suit = suit;
     }
@@ -20,11 +20,11 @@ public class Card{
         this.num = num;
     }
 
-    public char getSuit() {
+    public String getSuit() {
         return suit;
     }
 
-    public void setSuit(char suit) {
+    public void setSuit(String suit) {
         this.suit = suit;
     }
 
