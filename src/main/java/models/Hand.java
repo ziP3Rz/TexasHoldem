@@ -9,10 +9,20 @@ public class Hand {
     private Hands matchedHand;
     private Card[] orderedHand;
 
+    public Hand(Card[] fullHand) {
+        this.fullHand = fullHand;
+    }
+
+    public void showHand(){
+        for(Card card: fullHand){
+            System.out.println(card.toString());
+        }
+    }
+
     public void orderHand(){
         Card exchanger;
         for(int i = 1; i < fullHand.length; i++){
-            for(int j = 0; j < fullHand.length - 1; j++){
+            for(int j = 0; j < fullHand.length - i - 1; j++){
                 if(fullHand[j].getNum().getValue() > fullHand[i+1].getNum().getValue()){
                     exchanger = fullHand[j];
                     fullHand[j] = fullHand[j+1];
