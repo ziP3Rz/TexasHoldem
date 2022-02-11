@@ -33,4 +33,8 @@ public enum Numbers {
     public String getSign() {
         return sign;
     }
+
+    public static Numbers getNumbers(int possition){
+        return Numbers.values()[possition];
+    }
 }
