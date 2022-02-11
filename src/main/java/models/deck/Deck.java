@@ -20,6 +20,7 @@ public class Deck {
                 deck[i] = new Card((i + 1) % 13, "Clubs");
             } else {
                 deck[i] = new Card((i + 1) % 13, "Diamonds");
+
             }
         }
     }
