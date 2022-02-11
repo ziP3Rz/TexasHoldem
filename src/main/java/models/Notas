@@ -1,2 +1,7 @@
 Usa los enums que cree para hacer la clase Card.
-Échame una mano para hacer el algoritmo de ordenacion (para ordenar la mano por el número de cada carta.).
+Échame una mano para hacer el algoritmo de ordenacion (para ordenar la mano por el número de cada carta).
+
+Vale, lo hago ahora otra vez, otra cosa, no me deja probar cosas en el main
+me salta este error
+java: error: invalid source release: 15
+a ti te pasa lo mismo?
