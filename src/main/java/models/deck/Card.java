@@ -1,6 +1,6 @@
 package models.deck;
 
-public class Card{
+public class Card implements Comparable<Card>{
     private Numbers num;
     private Suits suit;
 
@@ -31,11 +31,14 @@ public class Card{
 
     @Override
     public String toString(){
-        return "Number: " + num + " | Suit: " + suit;
+        return "Number: " + this.getNum().getValue() + " | Suit: " + this.getNum().getSign();
     }
 
     //TODO: implementar compareTo
-    public int compareTo(Object o){
+
+    @Override
+    public int compareTo(Card o) {
         return 0;
     }
+
 }
