@@ -13,13 +13,14 @@ public class Deck {
     private void createDeck() {
         for (int i = 0; i < deck.length; i++) {
             if ( i < 13 ) {
-                deck[i] = new Card((i + 1) % 13, "Spades");
+                deck[i] = new Card(Numbers.getNumbers(i), Suits.getSuits(0));
             } else if ( i < 26 ) {
-                deck[i] = new Card((i + 1) % 13, "Hearts");
+                deck[i] = new Card(Numbers.getNumbers(i), Suits.getSuits(1));
             } else if ( i < 39 ) {
-                deck[i] = new Card((i + 1) % 13, "Clubs");
+                deck[i] = new Card(Numbers.getNumbers(i), Suits.getSuits(2));
             } else {
-                deck[i] = new Card((i + 1) % 13, "Diamonds");
+                deck[i] = new Card(Numbers.getNumbers(i), Suits.getSuits(3));
+
             }
         }
     }

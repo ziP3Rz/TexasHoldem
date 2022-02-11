@@ -1,30 +1,31 @@
 package models.deck;
 
 public class Card{
-    private int num;
-    private String suit;
+    private Numbers num;
+    private Suits suit;
 
     public Card() {
     }
 
-    public Card(int num, String suit) {
+    public Card(Numbers num, Suits suit) {
         this.num = num;
         this.suit = suit;
+
     }
 
-    public int getNum() {
+    public Numbers getNum() {
         return num;
     }
 
-    public void setNum(int num) {
+    public void setNum(Numbers num) {
         this.num = num;
     }
 
-    public String getSuit() {
+    public Suits getSuit() {
         return suit;
     }
 
-    public void setSuit(String suit) {
+    public void setSuit(Suits suit) {
         this.suit = suit;
     }
 
