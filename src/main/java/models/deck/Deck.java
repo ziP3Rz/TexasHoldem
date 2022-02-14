@@ -47,6 +47,7 @@ public class Deck {
     //TODO: implementar deal
     public Card[] deal(int cards) {
         Card[] hand = new Card[cards];
+
         for (int i = 0 , j = 0; i<cards; i++){
             if ( deck[i] != null ) {
                 hand[j] = deck[i];
