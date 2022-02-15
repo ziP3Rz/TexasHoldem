@@ -14,7 +14,9 @@ public class Player {
            this.bank = this.bank - bet;
            this.actualBet = bet;
            System.out.println("Apuesta Igualada");
-       } else System.out.println("Bank insuficiente, si quieres apostar realiza un all-in");
+       } else {
+           System.out.println("Bank insuficiente, si quieres apostar realiza un all-in");
+       }
     }
 
     public boolean riseBet(int amount){
@@ -22,7 +24,9 @@ public class Player {
             this.bank = this.bank - amount;
             this.actualBet = amount;
             return true;
-        } else return false;
+        } else {
+            return false;
+        }
     }
 
     public void check(){
