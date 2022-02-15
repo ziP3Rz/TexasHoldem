@@ -3,6 +3,8 @@ package models;
 import models.deck.Card;
 import models.deck.Hands;
 
+import java.util.Arrays;
+
 public class Hand {
 
     private Card[] fullHand = new Card[5];
@@ -20,16 +22,7 @@ public class Hand {
     }
 
     public void orderHand(){
-        Card exchanger;
-        for(int i = 1; i < fullHand.length; i++){
-            for(int j = 0; j < fullHand.length - i - 1; j++){
-                if(fullHand[j].getNum().getValue() > fullHand[i+1].getNum().getValue()){
-                    exchanger = fullHand[j];
-                    fullHand[j] = fullHand[j+1];
-                    fullHand[j+1] = exchanger;
-                }
-            }
-        }
+        Arrays.sort(fullHand);
     }
 
     //TODO: implementar este método: devolverá -1 en caso de que la mano invocante sea peor que la mano pasada como parámetro, 1 en caso contrario y 0 en caso de que sean iguales (equivalentes en valor).
