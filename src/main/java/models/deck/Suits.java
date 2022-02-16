@@ -20,4 +20,6 @@ public enum Suits {
     public static Suits getSuits(int possition){
         return Suits.values()[possition];
     }
+
+    //TODO: implementar equals
 }
