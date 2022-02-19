@@ -10,7 +10,6 @@ public class Card implements Comparable<Card>{
     public Card(Numbers num, Suits suit) {
         this.num = num;
         this.suit = suit;
-
     }
 
     public Numbers getNum() {

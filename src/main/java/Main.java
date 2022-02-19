@@ -11,15 +11,15 @@ public class Main {
 
         System.out.println();
 
-        Card a = new Card(Numbers.AS, Suits.SPADES);
+        Card a = new Card(Numbers.AS, Suits.CLUBS);
         Card b = new Card(Numbers.SEVEN, Suits.SPADES);
-        Card c = new Card(Numbers.THREE, Suits.SPADES);
+        Card c = new Card(Numbers.SEVEN, Suits.HEARTS);
         Card d = new Card(Numbers.TWO, Suits.SPADES);
         Card e = new Card(Numbers.FOUR, Suits.SPADES);
         Hand aHand = new Hand(new Card[]{a,b,c,d,e});
         aHand.orderHand();
         aHand.showHand();
         System.out.println(aHand.isSuited() ? "Hay color" : "No hay color");
+        System.out.println(aHand.isPair() ? "Hay pareja" : "No hay pareja");
     }
-
 }
