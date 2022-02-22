@@ -1,5 +1,7 @@
 package models.deck;
 
+import java.util.Objects;
+
 public class Card implements Comparable<Card>{
     private Numbers num;
     private Suits suit;
@@ -33,12 +35,19 @@ public class Card implements Comparable<Card>{
         return "Number: " + this.getNum().getSign() + " | Suit: " + this.getSuit().getSign();
     }
 
-    //TODO: implementar compareTo
 
     @Override
     public int compareTo(Card o) {
         if ( this == o ) return 1;
         return Integer.compare(o.num.getValue(), this.num.getValue());
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if ( this == o ) return true;
+        if ( !(o instanceof Card) ) return false;
+        return this.getNum() == ((Card) o).getNum();
+    }
+
 
 }
